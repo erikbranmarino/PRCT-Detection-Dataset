@@ -57,7 +57,7 @@ If you use this dataset in your research, please cite:
 @inproceedings{marino2025one,
   title={One Model to Detect Them All? Comparing LLMs, BERT and Traditional ML in Cross-Platform Conspiracy Detection},
   author={Marino, Erik Bran and Vieira, Renata and Bassi, Davide and Ribeiro, Ana Sofia and Baleato, Suso},
-  booktitle={Proceedings of the [Conference Name]},
+  booktitle={Proceedings of the ACL 2025 Conference},
   year={2025}
 }
 ```
