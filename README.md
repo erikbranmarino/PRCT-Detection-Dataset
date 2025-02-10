@@ -20,20 +20,23 @@ The anonymized gold standard dataset includes the following fields:
 - `Timestamp`: Month and year of the comment
 
 ## Repository Structure
-
 ```
 .
+├── LICENSE
+├── README.md
+├── technical_setup.md          # Hardware and software specifications
+├── requirements.txt           # Project dependencies
 ├── data/
-│   ├── gold_standard.csv        # Anonymized YouTube dataset
-│   └── telegram_dataset.csv     # Telegram cross-platform test set
+│   ├── anonymized_gold_standard.csv    # YouTube dataset
+│   └── anonymized_telegram_test_set.csv # Telegram test set
 ├── annotation_guidelines/
-│   ├── youtube_guidelines.md    # Guidelines for YouTube annotation
-│   └── telegram_guidelines.md   # Guidelines for Telegram annotation
+│   ├── youtube-guidelines.md   # Guidelines for YouTube
+│   └── telegram-guidelines.md  # Guidelines for Telegram
 ├── prompts/
-│   └── classification_prompt.py # Prompt template for LLM classification
-├── scripts/
-│   └── anonymize_dataset.py    # Dataset anonymization script
-└── README.md
+│   └── generate_prompt.py     # LLM classification prompts
+└── scripts/
+    ├── gold_standard_anonimization.py
+    └── telegram_anonimyzation.py
 ```
 
 ## Usage
@@ -47,12 +50,14 @@ Two sets of annotation guidelines are provided:
 2. Telegram guidelines used for cross-platform validation
 
 ### Classification Prompt
-The `classification_prompt.py` file contains the structured prompt template used for few-shot learning with Large Language Models (GPT-4 and DeepSeek).
+The `generate_prompt.py` file contains the structured prompt template used for few-shot learning with Large Language Models (GPT-4 and DeepSeek).
+
+### Technical Setup
+For detailed information about hardware requirements, model versions, and analysis pipeline, please refer to `technical_setup.md`.
 
 ## Citation
 
 If you use this dataset in your research, please cite:
-
 ```bibtex
 @inproceedings{marino2025one,
   title={One Model to Detect Them All? Comparing LLMs, BERT and Traditional ML in Cross-Platform Conspiracy Detection},
