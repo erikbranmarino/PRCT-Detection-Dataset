@@ -80,3 +80,4 @@ For questions about the dataset or research, please contact:
 ## Acknowledgments
 
 This research was conducted at the Universidade de Évora and Universidade de Santiago de Compostela. We thank our annotators and reviewers for their valuable contributions to this work.
+This research was assisted with LLMs: the python scripts were refined and better shaped with the help of Claude 3.5 Sonnet.
