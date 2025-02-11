@@ -27,7 +27,7 @@ The anonymized gold standard dataset includes the following fields:
 ├── technical_setup.md          # Hardware and software specifications
 ├── requirements.txt           # Project dependencies
 ├── data/
-│   ├── anonymized_gold_standard.csv    # YouTube dataset
+│   ├── anonymized_gold_standard.csv    # YouTube gold standard dataset
 │   └── anonymized_telegram_test_set.csv # Telegram test set
 ├── annotation_guidelines/
 │   ├── youtube-guidelines.md   # Guidelines for YouTube
@@ -55,29 +55,10 @@ The `generate_prompt.py` file contains the structured prompt template used for f
 ### Technical Setup
 For detailed information about hardware requirements, model versions, and analysis pipeline, please refer to `technical_setup.md`.
 
-## Citation
-
-If you use this dataset in your research, please cite:
-```bibtex
-@inproceedings{marino2025one,
-  title={One Model to Detect Them All? Comparing LLMs, BERT and Traditional ML in Cross-Platform Conspiracy Detection},
-  author={Marino, Erik Bran and Vieira, Renata and Bassi, Davide and Ribeiro, Ana Sofia and Baleato, Suso},
-  booktitle={Proceedings of the ACL 2025 Conference},
-  year={2025}
-}
-```
-
 ## License
 
 This dataset is released under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). This license allows reuse and adaptation for non-commercial purposes, as long as appropriate credit is given and adaptations are shared under the same terms.
 
-## Contact
-
-For questions about the dataset or research, please contact:
-- Erik Bran Marino (erik.marino@uevora.pt)
-- Renata Vieira (renatav@uevora.pt)
-
 ## Acknowledgments
 
-This research was conducted at the Universidade de Évora and Universidade de Santiago de Compostela. We thank our annotators and reviewers for their valuable contributions to this work.
 This research was assisted with LLMs: the python scripts were refined and better shaped with the help of Claude 3.5 Sonnet.
