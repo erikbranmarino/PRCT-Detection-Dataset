@@ -12,7 +12,7 @@ The anonymized gold standard dataset includes the following fields:
 - `CommentID`: Unique identifier for each comment
 - `CommentText`: The text content of the comment
 - `Model_Classification`: Model's prediction
-- `Annotation`: Manual annotation (0: Non-PRCT, 1: PRCT)
+- `Annotation`: Manual annotation (Boolean values, depending on whether the prediction of the model was true or false)
 - `NumberOfLikes`: Number of likes received
 - `IsReply`: Whether the comment is a reply
 - `Level`: Depth level in the comment thread
